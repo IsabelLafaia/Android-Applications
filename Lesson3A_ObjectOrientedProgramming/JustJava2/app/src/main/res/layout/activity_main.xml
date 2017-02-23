@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/StandardPadding"
+    android:orientation="vertical"
+    tools:context="com.example.android.justjava2.MainActivity">
+
+    <EditText
+        android:id="@+id/editName_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="@string/editName_string"/>
+
+    <TextView
+        style="@style/TextView_Theme"
+        android:layout_marginBottom="@dimen/StandardMargin"
+        android:text="@string/topping_string" />
+
+    <CheckBox
+        android:id="@+id/topping_checkbox"
+        style="@style/CheckBox_Theme"
+        android:text="@string/topping_checkbox_string"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/chocolate_checkbox"
+        style="@style/CheckBox_Theme"
+        android:text="@string/chocolate_checkbox_string"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <TextView
+        style="@style/TextView_Theme"
+        android:layout_marginTop="@dimen/StandardMargin"
+        android:text="@string/quantity_string" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/StandardMargin"
+        android:layout_marginBottom="@dimen/StandardMargin"
+        android:layout_marginLeft="@dimen/StandardMargin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            style="@style/ButtonTheme"
+            android:text="@string/minus_sign"
+            android:onClick="decrement"/>
+
+
+        <TextView
+            android:id="@+id/quantity_text"
+            style="@style/ButtonTheme"
+            android:background="@android:color/white"
+            android:text="@string/initial_quantity"
+            android:onClick="increment"/>
+
+        <Button
+            android:id="@+id/plus_button"
+            style="@style/ButtonTheme"
+            android:text="@string/plus_sign"
+            android:onClick="increment"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/next_button"
+                style="@style/TextView_Theme"
+                android:padding="@dimen/SmallPadding"
+                android:background="@color/buttonColor"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:text="@string/order_text"
+                android:onClick="submitOrder"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DataScienceQuizz</string>
+
+    <string name="title">Quizz: what\'s your role in data science?</string>
+
+    <string name="question1">Hi! How should I call you?</string>
+
+    <string name="question2">What tools do you use frequently?</string>
+    <string name="question2_answer1">R</string>
+    <string name="question2_answer2">Python</string>
+    <string name="question2_answer3">Matlab</string>
+    <string name="question2_answer4">Spark</string>
+    <string name="question2_answer5">SQL</string>
+    <string name="question2_answer6">JS</string>
+
+    <string name="question3">What are your strongest skills?</string>
+    <string name="question3_answer1">Maths and Stats</string>
+    <string name="question3_answer2">Programming</string>
+    <string name="question3_answer3">Machine learning</string>
+    
+    <string name="question4">How do you use Excel?</string>
+    <string name="question4_answer1">Only to extract data.</string>
+    <string name="question4_answer2">To input data and for analyzing data.</string>
+    
+    <string name="question5">Can you code without looking at the keyboard?</string>
+    <string name="question5_answer1">Yes</string>
+    <string name="question5_answer2">No</string>
+
+    <string name="submit_button">submit</string>
+</resources>

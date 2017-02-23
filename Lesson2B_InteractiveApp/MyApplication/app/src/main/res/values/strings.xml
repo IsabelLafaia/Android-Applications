@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Judge app - speech contest</string>
+
+    <string name="app_title">Judge score counter</string>
+
+    <string name="instructions">
+        Score each category from 0 to 5.
+    </string>
+
+    <string name="initial_value">0</string>
+
+    <string name="name_speakerA">Speaker A</string>
+    <string name="name_speakerB">Speaker B</string>
+
+    <string name="plus3_text">+3 Points</string>
+    <string name="plus2_text">+2 Points</string>
+    <string name="freeThrow_text">Free throw</string>
+
+    <string name="reset_text_speakerA">Reset speaker 1</string>
+    <string name="reset_text_speakerB">Reset speaker 2</string>
+    <string name="reset_text">Reset all speakers</string>
+    <string name="calcresult_text">Find Winner</string>
+
+    <string name="criteria1">Speech structure</string>
+    <string name="criteria2">Speech purpose</string>
+    <string name="criteria3">Body language</string>
+    <string name="criteria4">Tone of voice</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

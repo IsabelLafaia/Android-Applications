@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Style for business name and logo. -->
+
+    <style name="Business_Name_Logo" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/std_padding</item>
+        <item name="android:paddingRight">@dimen/std_padding</item>
+
+
+    </style>
+
+    <!-- Style for the header of the scrolling frame. -->
+    <style name="ScrollTitleStyle" parent="@android:style/TextAppearance.Medium">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/darkBlue</item>
+        <item name="android:paddingBottom">@dimen/std_padding</item>
+        <item name="android:paddingTop">@dimen/std_padding</item>
+        <item name="android:paddingLeft">@dimen/std_padding</item>
+
+    </style>
+
+    <!-- Font style for elements in scrollable frame. -->
+    <style name="ScrollElementFont" parent="@android:style/TextAppearance.Medium">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:padding">@dimen/std_padding</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LisbonExplorers</string>
+
+    <string name="groupName">LISBON EXPLORERS</string>
+    <string name="groupLogo">partners for urban adventure</string>
+
+    <string name="scrollFrameTitle">New meetups in February 2017:</string>
+
+    <string name="event1">2nd Feb. | 10h - 12h30 | 5 euro\nGuided visit to Bairro Alto</string>
+    <string name="event2">5th Feb. | 14h - 16h | 12 euro\nVisit to the Contemporary Art Museum</string>
+    <string name="event3">9th Feb. | 9h - 18h | 5 euro\n1-day trip to Cascais and Estoril</string>
+    <string name="event4">15th Feb. | 10h - 16h | 6 euro\nVisit to Queluz palace</string>
+    <string name="event5">20th Feb. | 10h - 14h | 6 euro\nVisit to \"Castelo de S. Jorge\" in Lisbon</string>
+    <string name="event6">27th Feb. | 9h - 16h | 12 euro\nVisit to \"Oceanario de Lisboa\" in the old Expo\'98</string>
+
+</resources>

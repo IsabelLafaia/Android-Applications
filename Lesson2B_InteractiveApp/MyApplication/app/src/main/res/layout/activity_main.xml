@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:padding="@dimen/standard_padding"
+        android:textSize="@dimen/big_text_size"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:padding="@dimen/standard_padding"
+        android:textSize="@dimen/small_text_size"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/standard_padding"
+        android:paddingRight="@dimen/standard_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/lightGray"
+                android:padding="@dimen/standard_padding">
+
+                <TextView
+                    style="@style/SpeakerNameTheme"
+                    android:text="@string/name_speakerA" />
+
+                <TextView
+                    android:id="@+id/speakerA_score"
+                    style="@style/scoreViews"
+                    android:text="@string/initial_value" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/standard_padding">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria1"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerA_criteria1"
+                            android:onClick="incrementCriteriaASpeakerA"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerA_criteria1"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonLeft1"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonLeft1"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaASpeakerA"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria2"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerA_criteria2"
+                            android:onClick="incrementCriteriaBSpeakerA"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerA_criteria2"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonLeft2"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonLeft2"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaBSpeakerA"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria3"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerA_criteria3"
+                            android:onClick="incrementCriteriaCSpeakerA"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerA_criteria3"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonLeft3"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonLeft3"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaCSpeakerA"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria4"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerA_criteria4"
+                            android:onClick="incrementCriteriaDSpeakerA"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerA_criteria4"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonLeft4"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonLeft4"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaDSpeakerA"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/reset1Button"
+                    style="@style/ResetButtonTheme"
+                    android:onClick="resetSpeakerA"
+                    android:text="@string/reset_text_speakerA"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/LineColor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/lightGray"
+                android:padding="@dimen/standard_padding">
+
+                <TextView
+                    style="@style/SpeakerNameTheme"
+                    android:text="@string/name_speakerB" />
+
+                <TextView
+                    android:id="@+id/speakerB_score"
+                    style="@style/scoreViews"
+                    android:text="@string/initial_value" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/standard_padding">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria1"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerB_criteria1"
+                            android:onClick="incrementCriteriaASpeakerB"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerB_criteria1"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonRight1"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonRight1"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaASpeakerB"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria2"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerB_criteria2"
+                            android:onClick="incrementCriteriaBSpeakerB"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerB_criteria2"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonRight2"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonRight2"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaBSpeakerB"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria3"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerB_criteria3"
+                            android:onClick="incrementCriteriaCSpeakerB"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerB_criteria3"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonRight3"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonRight3"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaCSpeakerB"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/CriteriaTheme"
+                            android:text="@string/criteria4"/>
+
+                        <Button
+                            style="@style/SquareButtonTheme"
+                            android:layout_toLeftOf="@+id/speakerB_criteria4"
+                            android:onClick="incrementCriteriaDSpeakerB"
+                            android:text="+"/>
+
+                        <TextView
+                            android:id="@+id/speakerB_criteria4"
+                            android:layout_width="@dimen/score_width"
+                            android:layout_height="@dimen/score_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_toLeftOf="@+id/minus_buttonRight4"
+                            android:text="@string/initial_value"/>
+
+                        <Button
+                            android:id="@+id/minus_buttonRight4"
+                            style="@style/SquareButtonTheme"
+                            android:layout_alignParentRight="true"
+                            android:onClick="decrementCriteriaDSpeakerB"
+                            android:text="-"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/reset2Button"
+                    style="@style/ResetButtonTheme"
+                    android:onClick="resetSpeakerB"
+                    android:text="@string/reset_text_speakerB"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/DarkBrown">
+
+
+        <Button
+            android:id="@+id/resetAllButton"
+            style="@style/ResetButtonTheme"
+            android:onClick="resetAll"
+            android:text="@string/reset_text"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

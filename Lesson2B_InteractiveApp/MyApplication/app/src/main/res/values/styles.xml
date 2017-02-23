@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+
+    <!-- Button style. -->
+    <style name="SquareButtonTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:layout_width">@dimen/score_height</item>
+        <item name="android:layout_height">@dimen/score_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+
+    </style>
+
+    <!-- Reset button style. -->
+    <style name="ResetButtonTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:padding">@dimen/standard_padding</item>
+        <item name="android:layout_margin">@dimen/standard_padding</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+    </style>
+
+
+    <style name="SpeakerNameTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/big_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/DarkGray</item>
+        <item name="android:typeface">sans</item>
+
+    </style>
+
+
+    <style name="scoreViews" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/big_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/bigger_text_size</item>
+        <item name="android:textColor">@color/PlainBlack</item>
+        <item name="android:typeface">sans</item>
+
+    </style>
+
+
+    <style name="CriteriaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/score_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+
+    </style>
+
+</resources>
+

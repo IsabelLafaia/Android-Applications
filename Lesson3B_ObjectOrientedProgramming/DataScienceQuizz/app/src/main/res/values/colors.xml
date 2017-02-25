@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="buttonColor">#3F51B5</color>
+    <color name="SubmitButtonColor">#3F51B5</color>
+    <color name="ResetButtonColor">#757575</color>
+
+    <color name="ButtonBackgroundColor">#E0E0E0</color>
 </resources>

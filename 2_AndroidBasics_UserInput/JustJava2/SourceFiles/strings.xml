@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">JustJava2</string>
+
+    <string name="editName_string">Name</string>
+
+    <string name="topping_string">topping</string>
+    <string name="quantity_string">quantity</string>
+    <string name="topping_checkbox_string">Whipped cream</string>
+    <string name="chocolate_checkbox_string">Chocolate</string>
+
+    <string name="minus_sign">-</string>
+    <string name="plus_sign">+</string>
+    <string name="quantity_text">Quantity</string>
+    <string name="price_text">Order Summary</string>
+    <string name="order_text">Order</string>
+
+    <string name="initial_quantity">1</string>
+    <string name="initial_price">$0</string>
+
+    <!-- Strings in Java file -->
+    <string name="ask_name">Name:\t</string>
+    <string name="add_whipped_cream">\nAdd whipped cream?\t</string>
+    <string name="add_chocolate">\nAdd chocolate?\t</string>
+    <string name="final_quantity">\nQuantity:\t</string>
+    <string name="final_price">\nTotal: $</string>
+    <string name="thanks_message">\nThank you!</string>
+    <string name="coffee_order_message">Coffee order for\t</string>
+
+    <string name="tooManyCoffeeMessage">You cannot have more than 100 coffees</string>
+    <string name="tooFewCoffeeMessage">You cannot have less than 1 coffees</string>
+
+</resources>
+

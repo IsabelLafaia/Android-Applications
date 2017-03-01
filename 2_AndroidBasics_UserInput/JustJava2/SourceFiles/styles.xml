@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796B</item>
+        <item name="colorAccent">#536DFE</item>
+    </style>
+
+
+    <style name="TextView_Theme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginLeft">@dimen/StandardMargin</item>
+    </style>
+
+
+    <style name="ButtonTheme">
+
+        <item name="android:layout_width">@dimen/ButtonHeight</item>
+        <item name="android:layout_height">@dimen/ButtonHeight</item>
+        <item name="android:background">@color/buttonColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/StandardTextSize</item>
+        <item name="android:padding">@dimen/SmallPadding</item>
+
+    </style>
+
+    <style name="CheckBox_Theme">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/StandardMargin</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+</resources>

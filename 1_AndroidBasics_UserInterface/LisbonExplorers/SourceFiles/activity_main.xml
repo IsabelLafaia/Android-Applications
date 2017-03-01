@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.lisbonexplorers.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lisbon_image"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/crow"
+            android:layout_width="52dp"
+            android:layout_height="70dp"
+            android:layout_margin="@dimen/std_padding"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/crow_image"
+            android:scaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/crow"
+            android:layout_alignTop="@id/crow"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                style="@style/Business_Name_Logo"
+                android:textSize="32sp"
+                android:text="@string/groupName"
+                />
+
+            <TextView
+                android:id="@+id/group_logo"
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                style="@style/Business_Name_Logo"
+                android:textSize="20sp"
+                android:text="@string/groupLogo"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/lightBlue"
+        android:layout_weight="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- The scrolling frame is composed of a header and several entries. -->
+            <TextView
+                style="@style/ScrollTitleStyle"
+                android:text="@string/scrollFrameTitle" />
+
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event1" />
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event2" />
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event3" />
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event4" />
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event5" />
+
+            <TextView
+                style="@style/ScrollElementFont"
+                android:text="@string/event6" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
